@@ -5,17 +5,9 @@ def QuickSort(A, start, end):
     # base case
     # print "run qs [%s] [%s]" % (start, end)
     if end > start:
-        # pivot = end
-        # pivot = randint(start, end)
-        # pivot = start
-        pivot = ((end - start) / 2) + start
-        # print "pivot is %s" % pivot
-        A[pivot], A[end] = A[end], A[pivot]
-        # print "A is [%s]" % A
         pivot = partition(A, start, end)
         QuickSort(A, start, pivot - 1)
         QuickSort(A, pivot + 1, end)
-
 
 def partition(A, start, end):
     # print "run partition [%s] [%s]" % (start, end)
