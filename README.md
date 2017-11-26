@@ -1,2 +1,2 @@
 # python
-python recipes and reuse codes repository
+python algorithm examples
