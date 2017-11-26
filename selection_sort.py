@@ -55,5 +55,4 @@ run [200,010,000] of times
 2
 12022
 finished
-
-Process finished with exit code 0
+"""
