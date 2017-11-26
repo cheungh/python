@@ -4,7 +4,6 @@ takes 20 seconds to sort 20000 integer
 use mergesort or quicksort for larger than 200 elements
 """
 def insertion_sort(A):
-    run = 0
     # for n element in list
     n = len(A)
     # let i be iterate counter of outer loop
