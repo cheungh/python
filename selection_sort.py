@@ -1,6 +1,12 @@
 from random import randint
 import time
+"""
 
+selection_sort
+iterate through n element
+and find smaller for each iteration and put it to the left one by one
+
+"""
 def selection_sort(A):
     run = 0
     # for n element in list
