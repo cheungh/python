@@ -1,4 +1,3 @@
-
 class Node:
     data = None
     right = None
@@ -42,7 +41,6 @@ class BST:
                         node.left = Node(data, node)
                         return node.left
                         break
-
                 # insert to left if data is greater than root_node
                 if data < node.data:
                     if node.right:
@@ -50,8 +48,6 @@ class BST:
                     else:
                         node.right = Node(data, node)
                         return node.right
-                        # break
-
         return node
 
     def traverse(self, node):
@@ -71,7 +67,6 @@ class BST:
         self.traverse(node.left)
 
     def search(self, node, searched_node):
-
         if node is None:
             return False
         while node:
@@ -81,9 +76,7 @@ class BST:
                 node = node.right
             else:
                 return node
-
         return False
-        #
 
 a = BST(11)
 a.insert(9)
